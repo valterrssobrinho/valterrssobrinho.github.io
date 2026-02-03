@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Valter Sobrinho — Canção do Novo Mundo</title>
 
@@ -46,12 +47,26 @@
       border:0;
       border-radius:12px;
     }
+
+    /* ===============================
+       ASCII MODE SWITCH
+       - Troque no <body>:
+         class="ascii-on"  (sem acentos)
+         class="ascii-off" (com acentos)
+       =============================== */
+    .ascii-on  .utf8 { display:none; }
+    .ascii-off .ascii{ display:none; }
+    .ascii-on pre { letter-spacing:0.02em; }
   </style>
 </head>
 
-<body>
+<!-- ALTERE AQUI:
+     ascii-on  = modo terminal (sem acentos)
+     ascii-off = português com acentos -->
+<body class="ascii-on">
   <main>
-<pre>+------------------------------------------------------------------+
+
+    <pre>+------------------------------------------------------------------+
 | VALTER SOBRINHO                                                   |
 +------------------------------------------------------------------+</pre>
 
@@ -59,7 +74,8 @@
 
     <div class="sp"></div>
 
-<pre>NOVO ALBUM
+    <!-- BLOCO TITULO + LINKS (ASCII / UTF-8) -->
+    <pre class="ascii">NOVO ALBUM
 CANCAO DO NOVO MUNDO
 
 OUCA / ASSISTA
@@ -68,6 +84,17 @@ OUCA / ASSISTA
 [03] Spotify        : <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi</a>
 [04] Deezer         : <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">https://www.deezer.com/br/album/898351742</a>
 [05] YouTube (Album): <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA</a>
+</pre>
+
+    <pre class="utf8">NOVO ÁLBUM
+CANÇÃO DO NOVO MUNDO
+
+OUÇA / ASSISTA
+[01] HearNow        : <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">https://valtersobrinho.hearnow.com/</a>
+[02] YouTube (Canal): <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
+[03] Spotify        : <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi</a>
+[04] Deezer         : <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">https://www.deezer.com/br/album/898351742</a>
+[05] YouTube (Álbum): <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA</a>
 </pre>
 
     <div class="sp"></div>
@@ -82,8 +109,13 @@ OUCA / ASSISTA
 
     <div class="sp"></div>
 
-<pre>+------------------------------------------------------------------+
+    <!-- ENCARTE / CRÉDITOS (ASCII / UTF-8) -->
+    <pre class="ascii">+------------------------------------------------------------------+
 | ENCARTE / CREDITOS                                                |
++------------------------------------------------------------------+</pre>
+
+    <pre class="utf8">+------------------------------------------------------------------+
+| ENCARTE / CRÉDITOS                                                |
 +------------------------------------------------------------------+</pre>
 
     <div class="sp"></div>
@@ -98,7 +130,8 @@ OUCA / ASSISTA
 
     <div class="sp"></div>
 
-<pre>* * *
+    <!-- CONTATO (ASCII / UTF-8) -->
+    <pre class="ascii">* * *
 
 CONTATO
 - email   : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
@@ -107,7 +140,17 @@ CONTATO
 
 (c) VALTER SOBRINHO
 </pre>
+
+    <pre class="utf8">* * *
+
+CONTATO
+- email   : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
+- insta   : <a href="https://www.instagram.com/valtersantossobrinho/" target="_blank" rel="noopener">https://www.instagram.com/valtersantossobrinho/</a>
+- youtube : <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
+
+(c) VALTER SOBRINHO
+</pre>
+
   </main>
 </body>
 </html>
-
