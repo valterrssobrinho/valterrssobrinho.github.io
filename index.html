@@ -20,10 +20,16 @@
 
     main{ width:min(760px, 100%); }
 
-    .rule{ white-space: pre; line-height: 1.1; }
-    .sp{ height:14px; }
+    pre{
+      margin:0;
+      white-space:pre;
+      line-height:1.15;
+      font-size:14px;
+    }
 
     a{ color:inherit; text-decoration:underline; }
+
+    .sp{ height:14px; }
 
     .album-cover{
       display:block;
@@ -35,95 +41,73 @@
     .spotify{
       display:block;
       width:min(92%, 560px);
-      height:152px;             /* use 380 para álbum inteiro, se preferir */
+      height:152px; /* use 380 para álbum inteiro, se preferir */
       margin:10px auto;
       border:0;
       border-radius:12px;
     }
-
-    .section-title{ margin-top:10px; }
   </style>
 </head>
 
 <body>
   <main>
-    <div class="rule">-----------------------------------------</div>
-    <div class="rule">--- VALTER SOBRINHO ----------------------</div>
-    <div class="rule">-----------------------------------------</div>
+<pre>+------------------------------------------------------------------+
+| VALTER SOBRINHO                                                   |
++------------------------------------------------------------------+</pre>
 
-    <!-- Capa (coloque em /img/1.png) -->
     <img src="img/1.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
 
     <div class="sp"></div>
 
-    <div class="rule">NOVO ÁLBUM</div>
-    <div class="rule">CANÇÃO DO NOVO MUNDO</div>
-    <div class="sp"></div>
+<pre>NOVO ALBUM
+CANCAO DO NOVO MUNDO
 
-    <div class="rule">OUÇA NAS PLATAFORMAS!</div>
-    <div class="rule">
-<a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">HearNow</a>  |  
-<a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi?si=CLT7rmGNS5KosAmqAdAUng" target="_blank" rel="noopener">Spotify</a>  |  
-<a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">Deezer</a> |
-<a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">Youtube</a> |
-    </div>
-
+OUCA / ASSISTA
+[01] HearNow        : <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">https://valtersobrinho.hearnow.com/</a>
+[02] YouTube (Canal): <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
+[03] Spotify        : <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi</a>
+[04] Deezer         : <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">https://www.deezer.com/br/album/898351742</a>
+[05] YouTube (Album): <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA</a>
+</pre>
 
     <div class="sp"></div>
 
     <iframe
-  class="spotify"
-  src="https://open.spotify.com/embed/album/7blpGyUEhFPPJHQEYKUzZi"
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  loading="lazy"
-  title="Spotify — Canção do Novo Mundo">
-</iframe>
-
-
-    <div class="sp"></div>
-
-    <div class="rule">-----------------------------------------</div>
-    <div class="rule section-title"></div>
-    <div class="rule">-----------------------------------------</div>
-
-    <!-- Troque os links abaixo pelos links de TRACK (open.spotify.com/track/...) quando tiver -->
-    <div class="sp"></div>
-
-    
- <img src="img/2.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-    
- <img src="img/3.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-  
- <img src="img/4.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-   
- <img src="img/5.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-    
- <img src="img/6.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-   
- <img src="img/7.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
-
-<img src="img/8.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
+      class="spotify"
+      src="https://open.spotify.com/embed/album/7blpGyUEhFPPJHQEYKUzZi"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+      title="Spotify — Canção do Novo Mundo">
+    </iframe>
 
     <div class="sp"></div>
 
-    <!--
-      Se você quiser manter as imagens por faixa (img/2.png, img/3.png, etc.),
-      descomente blocos como este e ajuste o número/nomes:
-
-      <img src="img/2.png" alt="Arte — A Rendição" class="album-cover">
-    -->
+<pre>+------------------------------------------------------------------+
+| ENCARTE / CREDITOS                                                |
++------------------------------------------------------------------+</pre>
 
     <div class="sp"></div>
 
-    <div class="rule">* * *</div>
+    <img src="img/2.png" alt="Encarte 2 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/3.png" alt="Encarte 3 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/4.png" alt="Encarte 4 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/5.png" alt="Encarte 5 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/6.png" alt="Encarte 6 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/7.png" alt="Encarte 7 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/8.png" alt="Encarte 8 — Canção do Novo Mundo" class="album-cover">
+
     <div class="sp"></div>
 
-    <div class="rule">CONTATO</div>
-    <div class="rule"><a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a></div>
-<a href="https://www.instagram.com/valtersantossobrinho/" target="Instagram" rel="noopener">Instagram</a> 
+<pre>* * *
 
-    <div class="sp"></div>
-    <div class="rule">(c) VALTER SOBRINHO</div>
+CONTATO
+- email   : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
+- insta   : <a href="https://www.instagram.com/valtersantossobrinho/" target="_blank" rel="noopener">https://www.instagram.com/valtersantossobrinho/</a>
+- youtube : <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
+
+(c) VALTER SOBRINHO
+</pre>
   </main>
 </body>
 </html>
+
