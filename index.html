@@ -1,4 +1,3 @@
-```html
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -18,24 +17,7 @@
       color:#111;
       display:flex;
       justify-content:center;
-    /* ===== TYPING (terminal minimal) ===== */
-.typing{
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
-  border-right:1px solid currentColor; /* cursor */
-  width:0;
-  animation: typing 2.8s steps(44, end) forwards, caret .9s steps(1,end) infinite;
-}
-
-/* Ajuste o número 44 para o "tamanho" do texto (quanto maior, mais lento/preciso) */
-@keyframes typing { to { width: 44ch; } }
-@keyframes caret  { 50% { border-right-color: transparent; } }
-
-/* Respeita acessibilidade: quem prefere menos movimento não vê animações */
-@media (prefers-reduced-motion: reduce){
-  .typing{ animation:none; width:auto; border-right:0; }
-}}
+    }
 
     main{ width:min(760px, 100%); }
 
@@ -72,6 +54,25 @@
       border:0;
       border-radius:12px;
     }
+
+    /* ===== TYPING (terminal minimal) ===== */
+    .typing{
+      display:inline-block;
+      overflow:hidden;
+      white-space:nowrap;
+      border-right:1px solid currentColor; /* cursor */
+      width:0;
+      animation: typing 2.8s steps(52, end) forwards, caret .9s steps(1,end) infinite;
+    }
+
+    /* Ajuste o número 52 conforme o tamanho do texto */
+    @keyframes typing { to { width: 52ch; } }
+    @keyframes caret  { 50% { border-right-color: transparent; } }
+
+    /* Respeita acessibilidade: quem prefere menos movimento não vê animações */
+    @media (prefers-reduced-motion: reduce){
+      .typing{ animation:none; width:auto; border-right:0; }
+    }
   </style>
 </head>
 
@@ -88,13 +89,10 @@
 
     <div class="sp"></div>
 
-    <!-- IDEIA 1: NOW PLAYING -->
-    
-<pre><span class="typing">NOW PLAYING — CANÇÃO DO NOVO MUNDO — STATUS: DISPONÍVEL</span></pre>
+    <pre><span class="typing">NOW PLAYING — CANÇÃO DO NOVO MUNDO — STATUS: DISPONÍVEL</span></pre>
 
     <div class="sp"></div>
 
-    <!-- IDEIA 2: COMMAND LINE -->
 <pre>COMANDOS
 &gt; <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">OUVIR</a>    (HearNow)
 &gt; <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">ASSISTIR</a> (YouTube — Canal)
@@ -115,7 +113,6 @@
 
     <div class="sp"></div>
 
-    <!-- IDEIA 3: SYSTEM INFO (créditos como info de sistema) -->
 <pre>+------------------------------------------------------------------+
 | SYSTEM INFO                                                       |
 +------------------------------------------------------------------+
@@ -130,7 +127,7 @@ STATUS  : PUBLICADO
     <img src="img/2.png" alt="Encarte 2 — Canção do Novo Mundo" class="album-cover">
     <img src="img/3.png" alt="Encarte 3 — Canção do Novo Mundo" class="album-cover">
     <img src="img/4.png" alt="Encarte 4 — Canção do Novo Mundo" class="album-cover">
-    <img src="img/5.png" alt="Encarte 5 — Canção do Novo MUNDO" class="album-cover">
+    <img src="img/5.png" alt="Encarte 5 — Canção do Novo Mundo" class="album-cover">
     <img src="img/6.png" alt="Encarte 6 — Canção do Novo Mundo" class="album-cover">
     <img src="img/7.png" alt="Encarte 7 — Canção do Novo Mundo" class="album-cover">
     <img src="img/8.png" alt="Encarte 8 — Canção do Novo Mundo" class="album-cover">
@@ -149,4 +146,3 @@ CONTATO
   </main>
 </body>
 </html>
-```
