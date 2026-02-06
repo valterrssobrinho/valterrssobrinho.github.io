@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -30,6 +31,13 @@
 
     a{ color:inherit; text-decoration:underline; }
 
+    /* “terminal focus” minimalista */
+    a:hover{
+      background:#111;
+      color:#fff;
+      text-decoration:none;
+    }
+
     .sp{ height:14px; }
 
     .album-cover{
@@ -47,54 +55,36 @@
       border:0;
       border-radius:12px;
     }
-
-    /* ===============================
-       ASCII MODE SWITCH
-       - Troque no <body>:
-         class="ascii-on"  (sem acentos)
-         class="ascii-off" (com acentos)
-       =============================== */
-    .ascii-on  .utf8 { display:none; }
-    .ascii-off .ascii{ display:none; }
-    .ascii-on pre { letter-spacing:0.02em; }
   </style>
 </head>
 
-<!-- ALTERE AQUI:
-     ascii-on  = modo terminal (sem acentos)
-     ascii-off = português com acentos -->
-<body class="ascii-off">
+<body>
   <main>
-
-    <pre>+------------------------------------------------------------------+
+<pre>+------------------------------------------------------------------+
 | VALTER SOBRINHO                                                   |
 +------------------------------------------------------------------+</pre>
+
+    <!-- Easter egg (comentário invisível) -->
+    <!-- Se você está lendo isto, a canção já começou. -->
 
     <img src="img/1.png" alt="Capa do álbum Canção do Novo Mundo" class="album-cover">
 
     <div class="sp"></div>
 
-    <!-- BLOCO TITULO + LINKS (ASCII / UTF-8) -->
-    <pre class="ascii">NOVO ALBUM
-CANCAO DO NOVO MUNDO
-
-OUCA / ASSISTA
-[01] HearNow        : <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">https://valtersobrinho.hearnow.com/</a>
-[02] YouTube (Canal): <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
-[03] Spotify        : <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi</a>
-[04] Deezer         : <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">https://www.deezer.com/br/album/898351742</a>
-[05] YouTube (Album): <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA</a>
-</pre>
-
-    <pre class="utf8">NOVO ÁLBUM
+    <!-- IDEIA 1: NOW PLAYING -->
+<pre>NOW PLAYING
 CANÇÃO DO NOVO MUNDO
+STATUS: DISPONÍVEL</pre>
 
-OUÇA / ASSISTA
-[01] HearNow        : <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">https://valtersobrinho.hearnow.com/</a>
-[02] YouTube (Canal): <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
-[03] Spotify        : <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi</a>
-[04] Deezer         : <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">https://www.deezer.com/br/album/898351742</a>
-[05] YouTube (Álbum): <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA</a>
+    <div class="sp"></div>
+
+    <!-- IDEIA 2: COMMAND LINE -->
+<pre>COMANDOS
+&gt; <a href="https://valtersobrinho.hearnow.com/" target="_blank" rel="noopener">OUVIR</a>    (HearNow)
+&gt; <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">ASSISTIR</a> (YouTube — Canal)
+&gt; <a href="https://open.spotify.com/intl-pt/album/7blpGyUEhFPPJHQEYKUzZi" target="_blank" rel="noopener">STREAM</a>   (Spotify)
+&gt; <a href="https://www.deezer.com/br/album/898351742" target="_blank" rel="noopener">STREAM</a>   (Deezer)
+&gt; <a href="https://www.youtube.com/playlist?list=OLAK5uy_kJzZlFmWfLMRpIYd1iqJFoaSNC9Y0IFjA" target="_blank" rel="noopener">ÁLBUM</a>    (YouTube — Playlist)
 </pre>
 
     <div class="sp"></div>
@@ -109,48 +99,38 @@ OUÇA / ASSISTA
 
     <div class="sp"></div>
 
-    <!-- ENCARTE / CRÉDITOS (ASCII / UTF-8) -->
-    <pre class="ascii">+------------------------------------------------------------------+
-| ENCARTE / CREDITOS                                                |
-+------------------------------------------------------------------+</pre>
-
-    <pre class="utf8">+------------------------------------------------------------------+
-| ENCARTE / CRÉDITOS                                                |
-+------------------------------------------------------------------+</pre>
+    <!-- IDEIA 3: SYSTEM INFO (créditos como info de sistema) -->
+<pre>+------------------------------------------------------------------+
+| SYSTEM INFO                                                       |
++------------------------------------------------------------------+
+ARTISTA : VALTER SOBRINHO
+OBRA    : ÁLBUM
+TÍTULO  : CANÇÃO DO NOVO MUNDO
+STATUS  : PUBLICADO
+</pre>
 
     <div class="sp"></div>
 
     <img src="img/2.png" alt="Encarte 2 — Canção do Novo Mundo" class="album-cover">
     <img src="img/3.png" alt="Encarte 3 — Canção do Novo Mundo" class="album-cover">
     <img src="img/4.png" alt="Encarte 4 — Canção do Novo Mundo" class="album-cover">
-    <img src="img/5.png" alt="Encarte 5 — Canção do Novo Mundo" class="album-cover">
+    <img src="img/5.png" alt="Encarte 5 — Canção do Novo MUNDO" class="album-cover">
     <img src="img/6.png" alt="Encarte 6 — Canção do Novo Mundo" class="album-cover">
     <img src="img/7.png" alt="Encarte 7 — Canção do Novo Mundo" class="album-cover">
     <img src="img/8.png" alt="Encarte 8 — Canção do Novo Mundo" class="album-cover">
 
     <div class="sp"></div>
 
-    <!-- CONTATO (ASCII / UTF-8) -->
-    <pre class="ascii">* * *
+<pre>* * *
 
 CONTATO
-- email   : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
-- insta   : <a href="https://www.instagram.com/valtersantossobrinho/" target="_blank" rel="noopener">https://www.instagram.com/valtersantossobrinho/</a>
-- youtube : <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
+- e-mail  : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
+- insta   : <a href="https://www.instagram.com/valtersantossobrinho/" target="_blank" rel="noopener">instagram.com/valtersantossobrinho</a>
+- youtube : <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">youtube.com/@ValterSobrinhoTV</a>
 
 (c) VALTER SOBRINHO
 </pre>
-
-    <pre class="utf8">* * *
-
-CONTATO
-- email   : <a href="mailto:valterrssobrinho@gmail.com">valterrssobrinho@gmail.com</a>
-- insta   : <a href="https://www.instagram.com/valtersantossobrinho/" target="_blank" rel="noopener">https://www.instagram.com/valtersantossobrinho/</a>
-- youtube : <a href="https://www.youtube.com/@ValterSobrinhoTV" target="_blank" rel="noopener">https://www.youtube.com/@ValterSobrinhoTV</a>
-
-(c) VALTER SOBRINHO
-</pre>
-
   </main>
 </body>
 </html>
+```
